@@ -8,5 +8,21 @@
   </head>
   <body>
     <h1>Hello To My Journy</h1>
+  <div>
+    <label for="uname">Choose a username: </label>
+    <input type="text" id="uname" name="name" />
+  </div>
+  <div>
+    <button onclick="hello()">Submit</button>
+  </div> 
+ <script>
+    function hello (){ 
+    var n = document.getElementById('uname').value;
+    document.getElementById('div').innerHTML=n;
+    }
+ </script>
+  <div id="div">
+
+  </div>
   </body>
 </html>
